@@ -1,7 +1,7 @@
 $.getJSON('./data/vocabulary.json', function(json) {
   const vObj = json;
   const vList = $('#vocabulary-list');
-  const vNumber = 5;
+  const vNumber = 40;
   const numArray = vObj.vocabulary
     .map((v, i) => i)
     .filter((i) => vObj.vocabulary[i].audio);
