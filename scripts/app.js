@@ -130,9 +130,9 @@ $.getJSON('./data/vocabulary.json', function(json) {
         else {
           vAudio = new Howl({
             src: [`./audio/${audioArray[currentAudioI]}`],
-            html5: true
+            html5: true,
+            rate: 1.2
           });
-          vAudio.rate(1.2);
           let playTimes = 0;
           if (!isStop) {
             if (currentAudioI === 0 && playTimes === 0) {
