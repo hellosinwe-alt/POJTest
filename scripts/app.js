@@ -157,8 +157,9 @@ $.getJSON('./data/vocabulary.json', function(json) {
               }
               else if (currentAudioI < vNumber - 1) {
                 currentAudioI++;
+                setTimeout(function(){
                 playAudio(currentAudioI);
-              }
+                  }, 1500);  
               if (currentAudioI === (vNumber - 1) && playTimes === repeat) {
                 if (isEnd) {
                   setTimeout(function(){
