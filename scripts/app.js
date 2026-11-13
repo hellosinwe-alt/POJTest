@@ -132,6 +132,7 @@ $.getJSON('./data/vocabulary.json', function(json) {
             src: [`./audio/${audioArray[currentAudioI]}`],
             html5: true
           });
+          vAudio.rate(1.2);
           let playTimes = 0;
           if (!isStop) {
             if (currentAudioI === 0 && playTimes === 0) {
