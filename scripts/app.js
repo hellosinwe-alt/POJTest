@@ -143,7 +143,7 @@ $.getJSON('./data/vocabulary.json', function(json) {
               setTimeout(function(){
                 vAudio.play();
                 playTimes++;
-              }, 3000);
+              }, 1500);
             }
           }
     
