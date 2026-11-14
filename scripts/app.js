@@ -160,6 +160,7 @@ $.getJSON('./data/vocabulary.json', function(json) {
                 setTimeout(function(){
                 playAudio(currentAudioI);
                   }, 1500);  
+                }
               if (currentAudioI === (vNumber - 1) && playTimes === repeat) {
                 if (isEnd) {
                   setTimeout(function(){
